@@ -12,6 +12,7 @@
 		81C072CC2827E431004235B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C072CB2827E431004235B4 /* Assets.xcassets */; };
 		81C072CF2827E431004235B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C072CE2827E431004235B4 /* Preview Assets.xcassets */; };
 		81C072D62827E984004235B4 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */; };
+		81C072DB2827EA8E004235B4 /* DeviceBatteryStateViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C072DA2827EA8E004235B4 /* DeviceBatteryStateViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		81C072CB2827E431004235B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C072CE2827E431004235B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
+		81C072DA2827EA8E004235B4 /* DeviceBatteryStateViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBatteryStateViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */,
+				81C072DA2827EA8E004235B4 /* DeviceBatteryStateViewModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C072CA2827E42F004235B4 /* ContentView.swift in Sources */,
+				81C072DB2827EA8E004235B4 /* DeviceBatteryStateViewModifier.swift in Sources */,
 				81C072D62827E984004235B4 /* DeviceRotationViewModifier.swift in Sources */,
 				81C072C82827E42F004235B4 /* BatteryLevelApp.swift in Sources */,
 			);

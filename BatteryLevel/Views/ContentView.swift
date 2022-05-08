@@ -15,10 +15,36 @@ struct ContentView: View {
     // Will be populated with the current device orientation
     @State private var orientation = UIDeviceOrientation.unknown
     
+    // Will be populated with battery state information
+    @State private var batteryState = UIDevice.BatteryState.unknown
+    
     var body: some View {
         VStack {
             Text("Current battery level is: \(currentBatteryLevel)")
-            
+
+            Text("Battery state is:")
+                .padding(.top)
+            Group {
+                switch batteryState {
+                case .unknown:
+                    Text("Unknown")
+                case .unplugged:
+                    Text("Unplugged")
+                case .charging:
+                    Text("Charging")
+                case .full:
+                    Text("Full")
+                @unknown default:
+                    Text("Some other battery state")
+                }
+            }
+            // Uses the custom view modifier to receive the notifications for when the device orientation has changed
+            .onBatteryStateChanged { newState in
+                batteryState = newState
+            }
+
+            Text("Device orientation is:")
+                .padding(.top)
             Group {
                 if orientation.isPortrait {
                     Text("Portrait")
@@ -40,7 +66,10 @@ struct ContentView: View {
             // Adapted from:
             // https://www.hackingwithswift.com/example-code/uikit/how-to-read-the-battery-level-of-an-iphone-or-ipad
             
+            // Required to enable battery information monitoring
             UIDevice.current.isBatteryMonitoringEnabled = true
+            
+            // Show the device's current battery level (when app opens)
             currentBatteryLevel = UIDevice.current.batteryLevel
         }
     }
