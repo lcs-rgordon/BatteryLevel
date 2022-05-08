@@ -11,6 +11,7 @@
 		81C072CA2827E42F004235B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C072C92827E42F004235B4 /* ContentView.swift */; };
 		81C072CC2827E431004235B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C072CB2827E431004235B4 /* Assets.xcassets */; };
 		81C072CF2827E431004235B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C072CE2827E431004235B4 /* Preview Assets.xcassets */; };
+		81C072D62827E984004235B4 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		81C072C92827E42F004235B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81C072CB2827E431004235B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C072CE2827E431004235B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				81C072C72827E42F004235B4 /* BatteryLevelApp.swift */,
-				81C072C92827E42F004235B4 /* ContentView.swift */,
+				81C072D92827E9C8004235B4 /* Extensions */,
+				81C072D82827E991004235B4 /* Views */,
+				81C072D72827E988004235B4 /* ViewModifiers */,
 				81C072CB2827E431004235B4 /* Assets.xcassets */,
 				81C072CD2827E431004235B4 /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				81C072CE2827E431004235B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81C072D72827E988004235B4 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				81C072D52827E984004235B4 /* DeviceRotationViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		81C072D82827E991004235B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81C072C92827E42F004235B4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81C072D92827E9C8004235B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C072CA2827E42F004235B4 /* ContentView.swift in Sources */,
+				81C072D62827E984004235B4 /* DeviceRotationViewModifier.swift in Sources */,
 				81C072C82827E42F004235B4 /* BatteryLevelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
