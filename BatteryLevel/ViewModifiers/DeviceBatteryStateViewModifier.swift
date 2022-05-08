@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// Our custom view modifier to battery state
+// Our custom view modifier to receive notifications about when battery state changes
 // SEE:
 // https://www.hackingwithswift.com/example-code/uikit/how-to-read-the-battery-level-of-an-iphone-or-ipad
 // AND:

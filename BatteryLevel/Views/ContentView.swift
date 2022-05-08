@@ -38,7 +38,7 @@ struct ContentView: View {
                     Text("Some other battery state")
                 }
             }
-            // Uses the custom view modifier to receive the notifications for when the device orientation has changed
+            // Uses the custom view modifier to receive the notifications for when the battery state has changed
             .onBatteryStateChanged { newState in
                 batteryState = newState
             }
@@ -69,7 +69,7 @@ struct ContentView: View {
             // Required to enable battery information monitoring
             UIDevice.current.isBatteryMonitoringEnabled = true
             
-            // Show the device's current battery level (when app opens)
+            // Show the device's current battery level once (when app opens)
             currentBatteryLevel = UIDevice.current.batteryLevel
         }
     }
