@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored properties
+    @State var currentBatteryLevel: Float = 0.0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Current battery level is: \(currentBatteryLevel)")
+        }
+        .task {
+            
+            // Adapted from:
+            // https://www.hackingwithswift.com/example-code/uikit/how-to-read-the-battery-level-of-an-iphone-or-ipad
+            
+            UIDevice.current.isBatteryMonitoringEnabled = true
+            currentBatteryLevel = UIDevice.current.batteryLevel
+        }
     }
 }
 
