@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				81C072C72827E42F004235B4 /* BatteryLevelApp.swift */,
-				81C072D92827E9C8004235B4 /* Extensions */,
 				81C072D82827E991004235B4 /* Views */,
 				81C072D72827E988004235B4 /* ViewModifiers */,
 				81C072CB2827E431004235B4 /* Assets.xcassets */,
@@ -88,13 +87,6 @@
 				81C072C92827E42F004235B4 /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		81C072D92827E9C8004235B4 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
